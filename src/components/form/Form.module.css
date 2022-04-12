@@ -62,7 +62,6 @@
 
 .labelAndInput input {
   height: 4rem;
-  height: 4rem;
   padding-left: 2.4rem;
   font-size: 16px;
   border: 2px solid #8e8e8e;
@@ -103,7 +102,6 @@ input[type='checkbox']:checked {
   width: 2.4rem;
   height: 2.4rem;
   accent-color: rgb(240, 240, 240) !important;
-  /* opacity: 0; */
   cursor: pointer;
 }
 
@@ -162,4 +160,10 @@ input[type='checkbox']:checked {
 
 .checkboxError {
   margin-top: 0 !important;
+}
+
+@media (max-width: 97em) {
+  input::placeholder {
+    line-height: 3rem;
+  }
 }
