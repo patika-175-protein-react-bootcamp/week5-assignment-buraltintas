@@ -24,7 +24,14 @@ const Form = () => {
         }}
         validationSchema={LoginSchema}
       >
-        {({ values, handleChange, handleSubmit, errors, handleBlur }) => (
+        {({
+          values,
+          handleChange,
+          handleSubmit,
+          errors,
+          handleBlur,
+          touched,
+        }) => (
           <form className={styles.form}>
             <div className={styles.nameAndSurnameContainer}>
               <div className={styles.nameContainer}>
@@ -81,7 +88,10 @@ const Form = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
               />
-              <span className={styles.emailError}>{errors.email}</span>
+
+              <span className={styles.emailError}>
+                {touched.email && errors.email}
+              </span>
             </div>
             <div className={styles.labelAndInput}>
               <label
@@ -102,7 +112,9 @@ const Form = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
               />
-              <span className={styles.usernameError}>{errors.username}</span>
+              <span className={styles.usernameError}>
+                {touched.username && errors.username}
+              </span>
             </div>
             <div className={styles.labelAndInput}>
               <label
@@ -123,7 +135,9 @@ const Form = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
               />
-              <span className={styles.passwordError}>{errors.password}</span>
+              <span className={styles.passwordError}>
+                {touched.password && errors.password}
+              </span>
             </div>
             <div className={styles.labelAndInput}>
               <label
@@ -145,7 +159,7 @@ const Form = () => {
                 onBlur={handleBlur}
               />
               <span className={styles.passwordConfirmError}>
-                {errors.passwordConfirm}
+                {touched.passwordConfirm && errors.passwordConfirm}
               </span>
             </div>
             <div className={styles.checboxContainer}>
@@ -160,7 +174,9 @@ const Form = () => {
               <label htmlFor='checkbox' className={styles.contractConfirmText}>
                 Sözleşmeyi kabul ediyorum
               </label>
-              <span className={styles.checkboxError}>{errors.checkbox}</span>
+              <span className={styles.checkboxError}>
+                {touched.checkbox && errors.checkbox}
+              </span>
             </div>
 
             <button
