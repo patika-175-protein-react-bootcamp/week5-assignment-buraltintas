@@ -1,3 +1,22 @@
+# Week 5 Assignment
+
+Register Page Homework
+
+- Form control is handled by Formik and validation is handled by Yup.
+- Form has 2 nonrequired fields and 4 required fields and a required checkbox.
+- When user starts typing if validation is not passed it shows error until validation is done.
+- If user tries to submit without validation is done, it doesn't submit until fields are filled with correct information.
+
+Live: https://register-page-burak.netlify.app/
+
+![Alt text](https://i.ibb.co/82PCKdK/Ekran-Resmi-2022-04-13-12-02-02.png?raw=true 'Optional Title')
+
+![Alt text](https://i.ibb.co/WkBPv4q/Ekran-Resmi-2022-04-13-12-03-31.png?raw=true 'Optional Title')
+
+![Alt text](https://i.ibb.co/MSjMTHK/Ekran-Resmi-2022-04-13-12-02-23.png?raw=true 'Optional Title')
+
+![Alt text](https://i.ibb.co/cNCttM6/Ekran-Resmi-2022-04-13-12-02-54.png?raw=true 'Optional Title')
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
